@@ -20,3 +20,5 @@ jobs:
 
       - name: Build and Push Image
         run: ./build_push_image_karsajobs_ui.sh
+        env:
+          PASS_GITHUB: ${{ secrets.GCR_PASSWORD }}
