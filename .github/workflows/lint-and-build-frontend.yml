@@ -2,9 +2,9 @@ name: build
 
 on:
   push:
-    branches: [karsajob-ui]
+    branches: [karsajobs-ui]
   pull_request:
-    branches: [karsajob-ui]
+    branches: [karsajobs-ui]
 
 jobs:
   test:
