@@ -1,12 +1,10 @@
 name: build
 
-# the placeholder `$default-branch` will be automatically replaced with
-# the name of the repository's default branch, e.g. main
 on:
   push:
-    branches: [$default-branch]
+    branches: [karsajob-ui]
   pull_request:
-    branches: [$default-branch]
+    branches: [karsajob-ui]
 
 jobs:
   test:
