@@ -8,5 +8,3 @@ echo "$PASS_GITHUB" | docker login ghcr.io --username dafaath --password-stdin
 
 # Push to do github registry
 docker push ghcr.io/dafaath/karsajobs-ui:latest
-
-
