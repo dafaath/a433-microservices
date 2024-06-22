@@ -1,0 +1,17 @@
+version: "3" # Use version 3
+services: # List service
+  item-app: # Item app service 
+    image: ghcr.io/dafaath/item-app:v1
+    restart: always # Add restart if container dies
+    ports: # List expose port
+      - "80:8080" # Expose port 8080 and map it to 8080
+  item-db: # Item db service
+    image: "mongo:3" # Use this image
+    restart: always # Add restart if container dies
+    volumes: # List volume 
+      - type: volume # Volume type
+        source: app-db # With app-db volume
+        target: /data/db # Target /data/db
+
+volumes: # List volume
+  app-db: # Add app-db to volume
