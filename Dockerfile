@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3001
 
 # Run app
-CMD [ "npm", "start" ]
+CMD [ "node", "index.js" ]
